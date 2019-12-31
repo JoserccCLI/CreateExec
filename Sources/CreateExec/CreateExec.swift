@@ -57,6 +57,6 @@ class CreateExec {
         let template = try Template(string: packageMuache)
         let packageContent = try template.render(context)
         try packageContent.write(toFile: packageFile, atomically: true, encoding: .utf8)
-//        try runAndPrint("open", packageFile, "-a", "Xcode")
+        try runAndPrint("open", packageFile, "-a", "Xcode")
     }
 }
